@@ -25,7 +25,7 @@ enemyX_change, enemyY_change = 3, 40
 
 # Bullet
 bulletImg = pygame.image.load('bullet.png')
-bulletX, bulletY = 0, 480
+bulletX, bulletY = -1, 480
 bulletX_change, buklletY_change = 0, 3
 bullet_state = 'ready'
 
@@ -33,7 +33,7 @@ bullet_state = 'ready'
 scoreValue = 0
 
 # BGM
-mixer.Sound('background.wav').play()
+mixer.Sound('background.wav').play(-1)
 
 # 画像表示
 # Player
